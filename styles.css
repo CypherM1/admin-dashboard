@@ -9,14 +9,18 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template: 1fr 4fr / 1fr 5fr;
+    grid-template-rows: 1fr 4fr; 
+    grid-template-columns:  400px 5fr;
+    color: red;
 }
 
 /* This section is for styling the Side Bar Section */
 
 #sideBarContainer {
     grid-row: 1 / 3;
-    background-color: aqua;
+    background-color: black;
+    box-shadow: 10px 10px 20px red;
+    border-right: solid red;
 }
 
 #sideBarContainer div {
@@ -24,28 +28,61 @@ body {
 }
 
 #logoContainer {
+    width: 75%;
     margin-top: 25px;
     display: flex;
+    color: red;
+    align-items: center;
+}
+
+#logo img {
+    height: 100px;
+}
+
+.sideMenuIcon {
+    height: 50px;
+    /* display: block; */
+    margin-left: auto;
+}
+
+#menu a:link {
+    font-size: 1.6em;
+    color: red;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    font-size: 2.2em;
+    text-shadow: 2px 2px 10px #ffffff;
+}
+
+#menu a:visited {
+    font-size: 2em;
+    color: red;
+    text-decoration: none;
 }
 
 #topMenu {
     margin-top: 50px;
+}
+
+#topMenu a, #bottomMenu a {
+    width: 75%;
+    margin-top: 20px;
     display: grid;
-    grid-template: repeat(6, 1fr) / 1fr 1fr;
+    grid-template: 1fr / 1fr 8fr;
     grid-gap: 10px ;
+    align-items: center;
 }
 
 #bottomMenu {
-    margin-top: 50px;
-    display: grid;
-    grid-template: repeat(3, 1fr) / 1fr 1fr;
-    grid-gap: 10px ;
+    margin-top: 90px;
 }
 
 /* This section is for styling the Header Section */
 
 #headerContainer {
-    background-color: aquamarine;
+    background-color: #242424;
     display: flex;
     flex-direction: column;
     justify-content: center ;
@@ -54,19 +91,32 @@ body {
 
 #topHeader {
     margin-bottom: 30px;
-    width: 100%;
+    margin-left: 30px;
     display: flex;
     justify-content: space-between;
 }
 
 #search {
+    width: 80%;
     display: flex;
     flex-wrap: nowrap;
 }
 
-#searchBar {
-    width: 40em;
+#search img {
+    height: 50px;
+    margin-right: 10px;
 }
+
+#searchBar {
+    font-size: 2em;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+/* #searchBar::placeholder {
+    font-size: 2em;
+} */
 
 #topHeaderMenu {
     display: flex;
