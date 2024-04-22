@@ -107,6 +107,11 @@ body {
     margin-right: 10px;
 }
 
+#search button {
+    background-color: #242424;
+    border: 0;
+}
+
 #searchBar {
     font-size: 2em;
     width: 100%;
