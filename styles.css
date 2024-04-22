@@ -119,23 +119,66 @@ body {
     padding-left: 10px;
 }
 
-/* #searchBar::placeholder {
-    font-size: 2em;
-} */
-
 #topHeaderMenu {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+}
+
+#topHeaderMenu img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+#topHeaderMenu img:hover {
+    height: 50px;
+    margin-left: 20px;
+}
+
+#topHeaderMenu a:nth-child(3) {
+    margin: 0px 20px 0px 20px;
+}
+
+#topHeaderMenu a:link {
+    color: red;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+#topHeaderMenu a:hover {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#topHeaderMenu a:visited {
+    color: red;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+#userProfileIconSmall {
+    border-radius: 50%;
 }
 
 #bottomHeader {
+    margin: 0px 0px 10px 30px;
     display: flex;
     justify-content: space-between;
 }
 
 #welcome {
+
     display: flex;
     align-items: center;
+}
+
+#userProfileIconBig {
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 #bottomHeaderMenu {
