@@ -213,3 +213,15 @@ body {
     height: 60px;
     width: 120px;
 }
+
+/* This section is for styling the Main Section */
+
+#mainContainer {
+    display: grid;
+    grid-template: 1fr 5fr / 5fr 1fr;
+}
+
+#projectCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
