@@ -259,7 +259,12 @@ body {
 }
 
 .projectIcons {
-    margin-top: 50px;
+    margin: 50px 20px 0px auto;
+}
+
+.projectIcons img {
+    height: 25px;
+    margin-left: 10px;
 }
 
 #updatesContainer {
@@ -278,6 +283,19 @@ body {
     box-shadow: 8px 8px 20px 1px #2c2c2c;
 }
 
+#trending {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    row-gap: 10px;
+}
+
 hr {
     margin: 10px 0px 10px 0px;
+}
+
+.trendingUserIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
 }
