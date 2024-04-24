@@ -237,6 +237,7 @@ body {
 #projectCards {
     height: 100vh;
     overflow-y: scroll;
+    padding-right: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
